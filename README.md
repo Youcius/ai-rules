@@ -1,27 +1,27 @@
-# Claude Rules
+# AI Rules
 
-My personal [Claude Code](https://claude.ai/code) global configuration.
+Personal AI coding assistant configuration for Claude Code and Codex CLI.
 
 ## What's inside
 
-- **CLAUDE.md** — Global instructions for Claude Code, loaded automatically from `~/.claude/CLAUDE.md`
+- **CLAUDE.md** — Global instructions for Claude Code (`~/.claude/CLAUDE.md`)
+- **AGENTS.md** — Global instructions for Codex CLI (`~/.codex/AGENTS.md`)
 
 ## Usage
 
-Clone to your home directory:
-
 ```bash
-git clone https://github.com/Youcius/claude-rules.git
+git clone https://github.com/Youcius/ai-rules.git
 ```
 
-Then symlink or copy the files you need:
+Symlink or copy the files:
 
 ```bash
-# On macOS/Linux
-ln -sf ~/claude-rules/CLAUDE.md ~/.claude/CLAUDE.md
+# Claude Code (macOS/Linux)
+ln -sf ~/ai-rules/CLAUDE.md ~/.claude/CLAUDE.md
 
-# On Windows (PowerShell)
-New-Item -ItemType SymbolicLink -Path ~\.claude\CLAUDE.md -Target ~\claude-rules\CLAUDE.md -Force
+# Claude Code (Windows PowerShell)
+New-Item -ItemType SymbolicLink -Path ~\.claude\CLAUDE.md -Target ~\ai-rules\CLAUDE.md -Force
+
+# Codex CLI
+ln -sf ~/ai-rules/AGENTS.md ~/.codex/AGENTS.md
 ```
-
-Or just copy the content into your own `~/.claude/CLAUDE.md`.
